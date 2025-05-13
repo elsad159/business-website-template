@@ -1,36 +1,36 @@
-import { 
-  people01, 
-  people02, 
-  people03, 
-  facebook, 
-  instagram, 
-  linkedin, 
-  twitter, 
-  airbnb, 
-  binance, 
-  coinbase, 
-  dropbox, 
-  send, 
-  shield, 
+import {
+  people01,
+  people02,
+  people03,
+  facebook,
+  instagram,
+  linkedin,
+  twitter,
+  airbnb,
+  binance,
+  coinbase,
+  dropbox,
+  send,
+  shield,
   star
 } from "../assets";
 
 export const navLinks = [
   {
     id: "home",
-    title: "Home",
+    title: "Əsas Səhifə",
   },
   {
     id: "features",
-    title: "Features",
+    title: "Xüsusiyyətlər",
   },
   {
     id: "product",
-    title: "Product",
+    title: "Məhsul",
   },
   {
     id: "clients",
-    title: "Clients",
+    title: "Müştərilər",
   },
 ];
 
@@ -38,49 +38,46 @@ export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Rewards",
-    content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+    title: "Asan İmza İnteqrasiyası",
+    content: "Hesabınızı Asan İmza ilə bir neçə saniyəyə yaradın və təsdiqləyin – həm təhlükəsiz, həm rahat.",
   },
   {
     id: "feature-2",
-    icon: shield,
-    title: "100% Secured",
-    content:
-      "We take proactive steps make sure your information and transactions are secure.",
+    icon: send,
+    title: "Təkrar Əməliyyatlar",
+    content: "Öncəki ödəniş və müraciətləri bir kliklə təkrar edə bilərsiniz – vaxtınıza qənaət edin.",
   },
+ 
   {
     id: "feature-3",
-    icon: send,
-    title: "Balance Transfer",
-    content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+    icon: shield,
+    title: "Aylıq Onlayn Lotereya",
+    content: "Sadəcə tətbiqdən istifadə etməklə hər ay hədiyyə qazanmaq şansını əldə edin.",
   },
-];
-
+]
 export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
+      "Pul sadəcə bir vasitədir. O sizi istədiyiniz yerə aparacaq, amma sürücü rolunu sizdən ala bilməz.",
     name: "Herman Jensen",
-    title: "Founder & Leader",
+    title: "Təsisçi və Lider",
     img: people01,
   },
   {
     id: "feedback-2",
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
+      "Pul həyatı asanlaşdırır. Əgər onu əldə etmək şansınız varsa, deməli şanslısınız.",
     name: "Steve Mark",
-    title: "Founder & Leader",
+    title: "Təsisçi və Lider",
     img: people02,
   },
   {
     id: "feedback-3",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
+      "Ən çox varlı insanlar adətən maliyyə, ticarət və beynəlxalq bizneslə məşğul olanlardır.",
     name: "Kenn Gallagher",
-    title: "Founder & Leader",
+    title: "Təsisçi və Lider",
     img: people03,
   },
 ];
@@ -88,81 +85,81 @@ export const feedback = [
 export const stats = [
   {
     id: "stats-1",
-    title: "User Active",
-    value: "3800+",
+    title: "Aktiv İstifadəçi",
+    value: "3000+",
   },
   {
     id: "stats-2",
-    title: "Trusted by Company",
+    title: "Şirkətlərin Etibar Etdiyi",
     value: "230+",
   },
   {
     id: "stats-3",
-    title: "Transaction",
+    title: "Əməliyyat",
     value: "$230M+",
   },
 ];
 
 export const footerLinks = [
   {
-    title: "Useful Links",
+    title: "Faydalı Linklər",
     links: [
       {
-        name: "Content",
+        name: "Məzmun",
         link: "https://www.hoobank.com/content/",
       },
       {
-        name: "How it Works",
+        name: "Necə işləyir",
         link: "https://www.hoobank.com/how-it-works/",
       },
       {
-        name: "Create",
+        name: "Yarat",
         link: "https://www.hoobank.com/create/",
       },
       {
-        name: "Explore",
+        name: "Kəşf et",
         link: "https://www.hoobank.com/explore/",
       },
       {
-        name: "Terms & Services",
+        name: "Şərtlər və Xidmətlər",
         link: "https://www.hoobank.com/terms-and-services/",
       },
     ],
   },
   {
-    title: "Community",
+    title: "İcma",
     links: [
       {
-        name: "Help Center",
+        name: "Dəstək Mərkəzi",
         link: "https://www.hoobank.com/help-center/",
       },
       {
-        name: "Partners",
+        name: "Partnyorlar",
         link: "https://www.hoobank.com/partners/",
       },
       {
-        name: "Suggestions",
+        name: "Təkliflər",
         link: "https://www.hoobank.com/suggestions/",
       },
       {
-        name: "Blog",
+        name: "Bloq",
         link: "https://www.hoobank.com/blog/",
       },
       {
-        name: "Newsletters",
+        name: "Bülletenlər",
         link: "https://www.hoobank.com/newsletters/",
       },
     ],
   },
   {
-    title: "Partner",
+    title: "Partnyor",
     links: [
       {
-        name: "Our Partner",
+        name: "Bizim Partnyorlar",
         link: "https://www.hoobank.com/our-partner/",
       },
       {
-        name: "Become a Partner",
+        name: "Partnyor Ol",
         link: "https://www.hoobank.com/become-a-partner/",
       },
     ],

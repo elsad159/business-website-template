@@ -15,24 +15,13 @@ const Billing = () => {
         <div className='absolute z-[0] -left-1/2 bottom-0 w-[50%] h-[50%] rounded-full pink__gradient'/>
       </div>
       <div className={layout.sectionInfo}>
-        <h2 className={styles.heading2}>Easily control your <br className='sm:block hidden'/> billing & invoicing.</h2>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          Elit enim sed massa etiam.
-          Mauris eu adipiscing ultrices ametodio aenean neque.
-          Fusce ipsum orci rhoncus aliporttitor integer platea placerat.
+        <h2 className={styles.heading2}>Asanlıqla əvvəlki müqavilələrinizi <br className='sm:block hidden'/> yoxlaya bilərsiniz.</h2>
+        <p className={`${styles.paragraph} max-w-[590px] mt-5`}>
+          Şirkətdən götürdüyünüz avadanlıqları asanlıqla yoxlaya bilərsiniz.
+          Hər zaman kredit limitinizi asanlıqla yoxlaya bilərsiniz.
+          Sifariş verə, canlı ləğv edə bilərsiniz. Bütün bunları asanlıqla burada edə bilərsiniz.
         </p>
-        <div className='flex flex-row flex-wrap sm:mt-10 mt-6'>
-          <img
-            src={apple}
-            alt='app-store'
-            className='w-[128px] h-[42px] object-contain mr-5 cursor-pointer'
-          />
-          <img
-            src={google}
-            alt='google-play'
-            className='w-[128px] h-[42px] object-contain cursor-pointer'
-          />
-        </div>
+       
       </div>  
     </section>
   )

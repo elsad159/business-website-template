@@ -27,12 +27,10 @@ const Business = () => {
   return (
     <section id='features' className={layout.section}>
       <div className={layout.sectionInfo}>
-        <h2 className={styles.heading2}>You do the business, <br className='sm:block hidden'/>we'll handle the money.</h2>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          With the right credit card, 
-          you can improve your financial life by building credit,
-          earning rewards and saving money.
-          But with hundreds of credit cards on the market.
+        <h2 className={styles.heading2}>Siz biznesi aparırsınız, <br className='sm:block hidden'/>biz maliyyəni idarə edirik.</h2>
+        <p className={`${styles.paragraph} max-w-[470px] mt-5}`}>
+          Bizim tətbiqimizlə siz Asan İmza inteqrasiyası, kampaniyalar, hər gün yeni bildirişlər və ayda bir dəfə onlayn lotoreya ilə faydalanın. 
+          Hər gün yeni imkanlarla biznesinizi daha da irəlilədin.
         </p>
         <Button styles='mt-10'/>
       </div>
