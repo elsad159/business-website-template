@@ -12,7 +12,13 @@ import {
   dropbox,
   send,
   shield,
-  star
+  star,
+  happyCustomer,
+  happyCustomer2,
+  happyCustomer3,
+  happyCustomer4,
+  happyCustomer5,
+  happyCustomer6,
 } from "../assets";
 
 export const navLinks = [
@@ -22,39 +28,55 @@ export const navLinks = [
   },
   {
     id: "features",
-    title: "Xüsusiyyətlər",
+    title: "Imkanlar",
   },
   {
     id: "product",
     title: "Məhsul",
-  },
-  {
-    id: "clients",
-    title: "Müştərilər",
   },
 ];
 
 export const features = [
   {
     id: "feature-1",
-    icon: star,
-    title: "Asan İmza İnteqrasiyası",
-    content: "Hesabınızı Asan İmza ilə bir neçə saniyəyə yaradın və təsdiqləyin – həm təhlükəsiz, həm rahat.",
+    icon: happyCustomer,
+    title: "Qarşılıqlı, sürətli və Easy əlaqə",
+    content: "Platformamız istifadəçilərə anında, qarşılıqlı və problemsiz əlaqə qurmağa imkan verir. ",
   },
   {
     id: "feature-2",
-    icon: send,
-    title: "Təkrar Əməliyyatlar",
-    content: "Öncəki ödəniş və müraciətləri bir kliklə təkrar edə bilərsiniz – vaxtınıza qənaət edin.",
+    icon: happyCustomer2,
+    title: "Borc üzləşmələrinin istənilən yerdə Easy şəkildə aparıla bilməsi",
+    content: "Borc üzləşmələrini istənilən yerdə və istənilən vaxt asanlıqla aparmağa imkan veririk. Prosesi sürətli, rahat və əlçatan edərək vaxtınıza qənaət edirik.",
   },
- 
   {
     id: "feature-3",
-    icon: shield,
-    title: "Aylıq Onlayn Lotereya",
-    content: "Sadəcə tətbiqdən istifadə etməklə hər ay hədiyyə qazanmaq şansını əldə edin.",
+    icon: happyCustomer3,
+    title: "Kampaniya və endirimlər barədə anında məlumatlı olmaq",
+    content: "Kampaniya və endirimlər barədə anında məlumat almaq imkanı yaradırıq. Beləliklə, siz heç bir fürsəti qaçırmırsınız.",
   },
-]
+  {
+    id: "feature-4",
+    icon: happyCustomer4,
+    title: "Distribütorların müştərisi olmaq üçün Easy online qeydiyyat ",
+    content: "Distribütorların müştərisi olmaq üçün sürətli online qeydiyyat təqdim edirik. Fiziki müraciətə ehtiyac qalmadan proses rəqəmsal şəkildə həyata keçirilir.",
+  },
+  {
+    id: "feature-5",
+    icon: happyCustomer5,
+    title: "Dövriyyəni izləmək üçün kağız daşıyıcıdan istifadə olunmaması",
+    content: "Dövriyyəni izləmək üçün kağız daşıyıcıdan istifadə edilmir, bütün məlumatlar rəqəmsal şəkildə izlənir. Bu daha sürətli və effektivdir.",
+  },
+  {
+    id: "feature-6",
+    icon: happyCustomer6,
+    title: "Lotereyalarda iştirak və Easy hədiyyə qazanma imkanları",
+    content: "Lotereyalarda iştirak edərək hədiyyə qazanma imkanı. Hər bir iştirakçının şansı bərabərdir, qazanc isə sadə və sürətlidir.",
+  },
+
+];
+
+
 export const feedback = [
   {
     id: "feedback-1",

@@ -138,3 +138,22 @@
   background: rgba(255, 255, 255, 0.6);
   filter: blur(300px);
 }
+
+@keyframes animated-border {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-border-gradient {
+  background: linear-gradient(270deg, #00f, #0ff, #0f0, #ff0, #f00, #f0f, #00f);
+  background-size: 1200% 1200%;
+  animation: animated-border 25s linear infinite;
+  border-radius: 16px;
+}

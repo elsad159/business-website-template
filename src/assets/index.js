@@ -23,6 +23,13 @@ import twitter from "./twitter.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
+import sales1 from "./sales1.webp"
+import happyCustomer from "./happyCustomer.png"
+import happyCustomer2 from "./happyCustomer2.png"
+import happyCustomer3 from "./happyCustomer3.png"
+import happyCustomer4 from "./happyCustomer4.png"
+import happyCustomer5 from "./happyCustomer5.png"
+import happyCustomer6 from "./happyCustomer6.webp"
 
 export {
   airbnb,
@@ -50,4 +57,11 @@ export {
   people01,
   people02,
   people03,
+  sales1,
+  happyCustomer,
+  happyCustomer2,
+  happyCustomer3,
+  happyCustomer4,
+  happyCustomer5,
+  happyCustomer6,
 };
