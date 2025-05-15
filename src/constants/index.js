@@ -32,7 +32,11 @@ export const navLinks = [
   },
   {
     id: "product",
-    title: "Məhsul",
+    title: "Müraciyət",
+  },
+   {
+    id: "product",
+    title: "Haqqımızda",
   },
 ];
 

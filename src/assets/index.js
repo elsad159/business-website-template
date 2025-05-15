@@ -30,6 +30,8 @@ import happyCustomer3 from "./happyCustomer3.png"
 import happyCustomer4 from "./happyCustomer4.png"
 import happyCustomer5 from "./happyCustomer5.png"
 import happyCustomer6 from "./happyCustomer6.webp"
+import call from "./call.png"
+import slide3 from "./slide3.png"
 
 export {
   airbnb,
@@ -64,4 +66,6 @@ export {
   happyCustomer4,
   happyCustomer5,
   happyCustomer6,
+  call,
+  slide3
 };
