@@ -9,7 +9,7 @@ const Hero = () => {
       <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
 
         <div className='flex flex-row justify-between items-center w-full'>
-          <h1 className='flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]'>
+          <h1 className='flex-1 font-poppins font-semibold text-[32px] xs:text-[36px] ss:text-[56px] md:text-[64px] xl:text-[72px] text-white leading-[40px] xs:leading-[44px] ss:leading-[64px] md:leading-[72px] xl:leading-[100.8px]'>
             Kiçik və orta  <br className='sm:block hidden' />
             <span className='text-gradient'>ticarət nöqtələri üçün imkanlar</span>
           </h1>

@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className='w-full flex py-6 justify-between items-center navbar'>
       <a href="/" className="flex items-center">
         <img src={logo} alt="hoobank loqosu" className="w-[50px] h-[50px] mx-4" />
-        <h1 className="flex-1 font-poppins font-semibold ss:text-[35px] text-[35px] text-white ss:leading-[100.8px] leading-[75px]">
+        <h1 className="flex-1 font-poppins font-semibold text-[22px] ss:text-[35px] text-white leading-[32px] ss:leading-[48px]">
           <span className="text-gradient">Easy </span>Business <br className="sm:block hidden" />
         </h1>
       </a>
@@ -38,9 +38,9 @@ const Navbar = () => {
             {navLinks.map((nav, i) => (
               <li
                 key={nav.id}
-                className={`font-poppins font-normal cursor-pointer text-[16px] ${i === navLinks.length - 1 ? 'mr-0' : 'mb-4'} text-white mr-10`}
+                className={`font-poppins font-normal cursor-pointer text-[14px] ss:text-[16px] ${i === navLinks.length - 1 ? 'mr-0' : 'mb-4'} text-white mr-10`}
               >
-                <a href={`#${nav.id}`}>
+                <a href={`#${nav.id}`} onClick={() => setToggle(false)}>
                   {nav.title}
                 </a>
               </li>

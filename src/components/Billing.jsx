@@ -15,6 +15,7 @@ const Billing = () => {
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -22,14 +23,51 @@ const Billing = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setError(null);
     setLoading(true);
 
-    // Simulate API delay
-    setTimeout(() => {
-      console.log('Submitted data:', formData);
-      setLoading(false);
+    try {
+      const trimmedFullName = (formData.fullName || '').trim();
+      const [firstName, ...restNames] = trimmedFullName.split(/\s+/);
+      const lastName = restNames.join(' ');
+
+      const payload = {
+        companyName: formData.companyName,
+        companyTin: formData.voen,
+        userName: firstName || '',
+        userSurname: lastName || '',
+        userPosition: formData.position,
+        userPhone: formData.phone,
+      };
+
+      const response = await fetch('https://back-easy-prod-apis.site/easy', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        let message = `Request failed (${response.status})`;
+        try {
+          const data = await response.json();
+          if (data && (data.message || data.error)) {
+            message = data.message || data.error;
+          }
+        } catch (_) {
+          // ignore JSON parse errors and keep default message
+        }
+        throw new Error(message);
+      }
+
       setSubmitted(true);
-    }, 2000);
+    } catch (err) {
+      setError(err?.message || 'Xəta baş verdi. Zəhmət olmasa yenidən cəhd edin.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -46,7 +84,7 @@ const Billing = () => {
       <div className={layout.sectionInfo}>
         {!submitted ? (
           <>
-            <h2 className="text-2xl font-bold mb-6 text-center text-white ">
+            <h2 className="text-xl ss:text-2xl font-bold mb-6 text-center text-white ">
               Distribütor şirkətlər üçün xidmətə qoşulmaq üçün  <span className="text-gradient">easy </span> müraciət
             </h2>
             <form onSubmit={handleSubmit} className="space-y-5 w-full">
