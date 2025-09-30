@@ -167,3 +167,125 @@
   background-size: 200% 200%;
   animation: gradient-x 4s ease infinite;
 }
+
+/* Success Animation Styles */
+.success-checkmark {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  background: #4ade80;
+  animation: scale-in 0.5s ease-out;
+}
+
+.check-icon {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-icon::after {
+  content: '✓';
+  font-size: 48px;
+  color: white;
+  font-weight: bold;
+  animation: checkmark-appear 0.6s ease-out 0.3s forwards;
+  opacity: 0;
+  transform: scale(0);
+}
+
+/* Confetti Animation */
+.confetti-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #4ade80;
+  animation: confetti-fall var(--duration) ease-out var(--delay) forwards;
+}
+
+.confetti:nth-child(odd) {
+  background: #f59e0b;
+}
+
+.confetti:nth-child(3n) {
+  background: #ef4444;
+}
+
+.confetti:nth-child(4n) {
+  background: #8b5cf6;
+}
+
+.confetti:nth-child(5n) {
+  background: #06b6d4;
+}
+
+/* Keyframe Animations */
+@keyframes scale-in {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes checkmark-appear {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(var(--rotation)) translateX(var(--x));
+    opacity: 0;
+  }
+}
+
+/* Modal Animation */
+@keyframes modal-fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.modal-animation {
+  animation: modal-fade-in 0.3s ease-out;
+}

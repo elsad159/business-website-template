@@ -34,9 +34,13 @@ export const navLinks = [
     id: "product",
     title: "Müraciyət",
   },
-   {
-    id: "product",
-    title: "Haqqımızda",
+  {
+    id: "about-app",
+    title: "Tədbiq haqqında",
+  },
+  {
+    id: "partners",
+    title: "Partnerlarımız",
   },
 ];
 

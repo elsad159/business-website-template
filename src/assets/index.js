@@ -32,6 +32,19 @@ import happyCustomer5 from "./happyCustomer5.png"
 import happyCustomer6 from "./happyCustomer6.webp"
 import call from "./call.png"
 import slide3 from "./slide3.png"
+import storeDetails from "./mobileImage/storeDetails.png"
+import register from "./mobileImage/register.png"
+import recancellations from "./mobileImage/recancellations.png"
+import recancellationDetails from "./mobileImage/recancellationDetails.png"
+import onboarding from "./mobileImage/onboarding.png"
+import leftmenu from "./mobileImage/leftmenu.png"
+import inventar from "./mobileImage/inventar.png"
+import home from "./mobileImage/home.png"
+import dovriyyə from "./mobileImage/dovriyyə.png"
+import contracts from "./mobileImage/contracts.png"
+import campaigns from "./mobileImage/campaigns.png"
+import applyforcompanies from "./mobileImage/applyforcompanies.png"
+import marsLogo from "./marslgo.jpeg"
 
 export {
   airbnb,
@@ -67,5 +80,18 @@ export {
   happyCustomer5,
   happyCustomer6,
   call,
-  slide3
+  slide3,
+  storeDetails,
+  register,
+  recancellations,
+  recancellationDetails,
+  onboarding,
+  leftmenu,
+  inventar,
+  home,
+  dovriyyə,
+  contracts,
+  campaigns,
+  applyforcompanies,
+  marsLogo
 };

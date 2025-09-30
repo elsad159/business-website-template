@@ -196,12 +196,42 @@ const Billing = () => {
             </form>
           </>
         ) : (
-          <div className="flex justify-center items-center h-full w-full flex-col">
-            <img
-              src={call}
-              alt="Thank you"
-              className="w-[50%] rounded-lg shadow-lg"
-            />
+          <div className="flex justify-center items-center h-full w-full flex-col space-y-6">
+            {/* Success Animation */}
+            <div className="relative">
+              {/* Animated Checkmark */}
+              <div className="success-checkmark">
+                <div className="check-icon"></div>
+              </div>
+              
+              {/* Confetti Animation */}
+              <div className="confetti-container">
+                {[...Array(20)].map((_, i) => (
+                  <div
+                    key={i}
+                    className={`confetti confetti-${i}`}
+                    style={{
+                      '--delay': `${i * 0.1}s`,
+                      '--duration': `${2 + Math.random() * 2}s`,
+                      '--rotation': `${Math.random() * 360}deg`,
+                      '--x': `${Math.random() * 200 - 100}px`,
+                      '--y': `${Math.random() * 200 - 100}px`,
+                    }}
+                  />
+                ))}
+              </div>
+            </div>
+            
+            {/* Success Message */}
+            <div className="text-center space-y-4">
+              <h3 className="text-2xl font-bold text-white">
+                <span className="text-gradient">Təşəkkürlər!</span>
+              </h3>
+              <p className="text-gray-300 text-lg">
+                Müraciətiniz uğurla göndərildi. Tezliklə sizinlə əlaqə saxlayacağıq.
+              </p>
+            </div>
+            
             <Button />
           </div>
         )}

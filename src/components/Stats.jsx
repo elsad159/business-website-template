@@ -46,7 +46,7 @@ const Stats = () => {
         </p>
 
         <div className="border-t border-gray-700 pt-6 text-center space-y-2">
-          <p className="text-white font-medium">Əlaqə: <a href="tel:+994506858975" className="underline">(+994 50 685 89 75)</a></p>
+          <p className="text-white font-medium">Əlaqə: <a href="tel:+994559009200" className="underline">(+994 55 900 92 00)</a></p>
           <p className="text-white font-medium">Email: <a href="mailto:office@easybusiness.az" className="underline">office@easybusiness.az</a></p>
         </div>
       </div>

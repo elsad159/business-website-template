@@ -1,4 +1,5 @@
 import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import {
   Billing,
   Business,
@@ -8,12 +9,13 @@ import {
   Stats,
   Testimonials
 } from './components'
+import { AboutAppPage, PartnersPage } from './pages'
 import styles from './style'
 import AppStoreBanner from './components/AppStoreBanner'
 
-const App = () => {
+const HomePage = () => {
   return (
-    <div className='bg-primary w-full overflow-hidden'>
+    <>
       <AppStoreBanner />
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
@@ -33,7 +35,21 @@ const App = () => {
           <Footer />
         </div>
       </div>
-    </div>
+    </>
+  )
+}
+
+const App = () => {
+  return (
+    <Router>
+      <div className='bg-primary w-full overflow-hidden'>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about-app" element={<AboutAppPage />} />
+          <Route path="/partners" element={<PartnersPage />} />
+        </Routes>
+      </div>
+    </Router>
   )
 }
 
